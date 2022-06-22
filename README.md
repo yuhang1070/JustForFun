@@ -1,2 +1,2 @@
-# ***You Only Live Once!***
+# ***Just Code It!***
 You Only Live Once!
