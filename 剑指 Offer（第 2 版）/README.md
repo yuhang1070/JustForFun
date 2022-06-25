@@ -24,5 +24,5 @@
 ### 剑指 Offer 43. 1～n 整数中 1 出现的次数
 ### 剑指 Offer 44. 数字序列中某一位的数字
 ### 剑指 Offer 46. 把数字翻译成字符串
-### <font color='red'>剑指 Offer 51. 数组中的逆序对</font>
+### <font color="red">剑指 Offer 51. 数组中的逆序对</font>
 ###
