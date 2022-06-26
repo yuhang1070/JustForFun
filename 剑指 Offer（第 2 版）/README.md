@@ -24,7 +24,7 @@
 ### $\color{#FF0000}{剑指 Offer 20. 表示数值的字符串}$
 ### $\color{#FF0000}{剑指 Offer 43. 1～n 整数中 1 出现的次数}$
 
-### $\color{#00FF00}{剑指 Offer 38. 字符串的排列}$
-### $\color{#00FF00}{剑指 Offer 44. 数字序列中某一位的数字}$
-### $\color{#00FF00}{剑指 Offer 46. 把数字翻译成字符串}$
-### $\color{#00FF00}{剑指 Offer 51. 数组中的逆序对}$
+### $\color{#00FFFF}{剑指 Offer 38. 字符串的排列}$
+### $\color{#00FFFF}{剑指 Offer 44. 数字序列中某一位的数字}$
+### $\color{#00FFFF}{剑指 Offer 46. 把数字翻译成字符串}$
+### $\color{#00FFFF}{剑指 Offer 51. 数组中的逆序对}$
