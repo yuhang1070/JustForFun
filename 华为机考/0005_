@@ -1,0 +1,60 @@
+## 扑克牌大小
+### https://www.nowcoder.com/questionTerminal/0a92c75f5d6b4db28fcfa3e65e5c9b3f
+```java
+import java.util.*;
+public class Main {
+    public static int countSpace(String s) {
+        int cnt = 0;
+        for(int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) == ' ')
+                cnt++;
+        }
+        return cnt;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] ds = {"JOKER", "joker", "2", "A", "K",
+                       "Q", "J", "10", "9",
+                       "8", "7", "6", "5",
+                       "4", "3"};
+        String[] zds = {"joker JOKER", "2 2 2 2", "A A A A", "K K K K",
+                       "Q Q Q Q", "J J J J", "10 10 10 10", "9 9 9 9",
+                       "8 8 8 8", "7 7 7 7", "6 6 6 6", "5 5 5 5",
+                       "4 4 4 4", "3 3 3 3"};
+        String[] pms = sc.nextLine().trim().split("-");
+        for(String zd : zds) {
+            if(zd.equals(pms[0]) || zd.equals(pms[1])) {
+                System.out.println(zd);
+                return;
+            }
+        }
+        int cs0 = countSpace(pms[0]);
+        int cs1 = countSpace(pms[1]);
+        if(cs0 != cs1) {
+            System.out.println("ERROR");
+            return;
+        }
+        if(cs0 == 0) {
+            for(String d : ds) {
+                if(d.equals(pms[0]) || d.equals(pms[1])) {
+                    System.out.println(d);
+                    return;
+                }
+            }
+            return;
+        }
+        String s00 = pms[0].split(" ")[0];
+        String s10 = pms[1].split(" ")[1];
+        for(String d : ds) {
+            if(d.equals(s00)) {
+                System.out.println(pms[0]);
+                return;
+            }
+            if(d.equals(s10)) {
+                System.out.println(pms[1]);
+                return;
+            }
+        }
+    }
+}
+```
