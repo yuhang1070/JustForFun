@@ -1,5 +1,5 @@
 ```java
-import java.util.*;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,11 +8,7 @@ public class Main {
         while(i > -1 && arr[i] != ' ') {
             i--;    
         }
-        if(i == -1) {
-            System.out.println(arr.length);
-        } else {
-            System.out.println(arr.length - i - 1);
-        }
+        System.out.println(arr.length - i - 1);
     }
 }
 ```
